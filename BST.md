@@ -85,5 +85,23 @@ class node:
 
                 previous.left = temp.right
           return temp
-                       
-                        
+```
+creating objects  
+```
+root = node(50)
+
+root.insert(25)
+root.insert(75)
+root.insert(12)
+root.insert(30)
+root.insert(60)
+root.insert(6)
+root.insert(52)
+root.insert(70)
+
+root.delete(50)
+root.delete(75)
+root.inorder(root)
+```
+
+
