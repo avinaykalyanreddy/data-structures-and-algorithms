@@ -104,8 +104,10 @@ root.delete(75)
 root.inorder(root)
 ```
 
-**Time complexity**
-worst case for searching,traversing,insert,delete O(N)
+**Time complexity**  
+
+worst case for searching,traversing,insert,delete O(N)  
+
 average case for searching,insert,delete O(logN)
 
 
