@@ -85,6 +85,19 @@ class node:
 
                 previous.left = temp.right
           return temp
+
+      def find_large(self,root):
+            if root.right:
+                  return self.find_large(root.right)
+            else:
+                  return data
+
+      def find_small(self,root):
+            if root.left:
+                  return self.find_small(root.left)
+            else:
+                  return data
+
 ```
 creating objects  
 ```
@@ -99,9 +112,15 @@ root.insert(6)
 root.insert(52)
 root.insert(70)
 
-root.delete(50)
-root.delete(75)
-root.inorder(root)
+
+print(root.find_large(root))
+print(root.find_small(root))
+```
+## Output  
+
+```
+75
+6
 ```
 
 **Time complexity**  
