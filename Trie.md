@@ -101,6 +101,20 @@ class Trie :
         
         return False
 
+    def printTrie(self,node=None,prefix = ""):
+
+        if not node :
+
+            node = self.root
+
+        if node.isEndOfTheWord:
+
+            print(prefix)
+
+        for val,child in node.childrens.items():
+
+            self.printTrie(child,prefix+val)
+
 
 root = Trie()
 ```
